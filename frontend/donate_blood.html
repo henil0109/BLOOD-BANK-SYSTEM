@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Blood</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="animated-title">BLOOD BANK SYSTEM</h1>
+    <div class="donate-page">
+       <!-- Three-dot menu icon -->
+        <!-- Modern Hamburger Button -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+
+        <!-- Glassmorphism Side Panel -->
+        <div class="menu-panel" id="menu">
+            <div>
+                <br><br><br>
+                <p style="font-size: 24px; color: rgb(6, 6, 6);"><b><u>Blood Bank System</u></b></p>
+
+            </div><br>
+            <ul>
+               <li><a href="index.html">🏠 Home</a></li> 
+                
+                <li><a href="donation_history.html">Donation History</a></li>
+                
+               
+           <!-- </ul><br><br><br><br><br><br><br>
+            <button class="logout">Logout</button>-->
+        </div>
+        <div class="donate-container">
+            <h2>Donate Blood, Save Lives</h2>
+            <input type="text" placeholder="Full Name"><br>
+            <input type="number" placeholder="Age"><br>
+            <select>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select><br>
+            <input type="text" placeholder="Disease(if any)"><br>
+            <input type="number" placeholder="Units(ml)" required><br>
+            <input type="text" placeholder="Contact Number"><br><br><br>
+            
+            <button class="donate-btn">Donate Now</button>
+        </div>
+    </div>
+   
+</body>
+</html>

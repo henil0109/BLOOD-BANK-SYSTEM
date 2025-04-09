@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- Three-dot menu icon -->
+        <!-- Modern Hamburger Button -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+
+        <!-- Glassmorphism Side Panel -->
+        <div class="menu-panel" id="menu">
+            <div>
+                <br><br><br><br><br>
+                <p style="font-size: 24px; color: rgb(6, 6, 6);"><b><u>Blood Bank System</u></b></p>
+
+            </div><br><br>
+            <ul>
+               <li><a href="index.html">🏠 Home</a></li> 
+             
+               
+           <!-- </ul><br><br><br><br><br><br><br><br><br><br><br>
+            <button class="logout">Logout</button> -->
+        </div>
+    <title>Admin Login</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to left, #ff4e50, #f9d423);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Login Container */
+        .login-container {
+            background: rgba(12, 12, 12, 0.703);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 520px;
+            text-align: center;
+        }
+
+        /* Heading */
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #e3e1e1;
+        }
+
+        /* Input Fields */
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login-container input:focus {
+            border-color: #ff4e50;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 78, 80, 0.5);
+        }
+
+        /* Login Button */
+        .login-container button {
+            width: 50%;
+            padding: 12px;
+            border: none;
+            background: #ff4e50;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-container button:hover {
+            background: #d14042;
+        }
+
+        /* Error Message */
+        #error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form onsubmit="return validateAdminLogin(event)">
+            <input type="text" id="adminUsername" placeholder="Admin Username" required>
+            <input type="password" id="adminPassword" placeholder="Password" required><br><br>
+            <button type="submit">Login</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <script>
+        function validateAdminLogin(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Hardcoded admin credentials (Replace with a secure backend authentication later)
+            const correctUsername = "admin";
+            const correctPassword = "password123";
+
+            let username = document.getElementById("adminUsername").value;
+            let password = document.getElementById("adminPassword").value;
+
+            if (username === correctUsername && password === correctPassword) {
+                alert("Login successful!");
+                window.location.href = "admin.html"; // Redirect to admin panel
+            } else {
+                document.getElementById("error-message").innerText = "Invalid username or password!";
+            }
+        }
+    </script>
+
+</body>
+</html>

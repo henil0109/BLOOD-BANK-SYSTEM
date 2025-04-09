@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <h2 class="animated-title">BLOOD BANK SYSTEM</h2>
+        <!-- Three-dot menu icon -->
+<!-- Modern Hamburger Button -->
+<div class="menu-icon" onclick="toggleMenu()">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+     <!-- Glassmorphism Side Panel -->
+     <div class="menu-panel" id="menu">
+        <div>
+            <br><br><br><br><br>
+            <p style="font-size: 24px; color: rgb(6, 6, 6);"><b><u>Blood Bank System</u></b></p>
+
+        </div><br><br>
+        <ul>
+           <li><a href="index.html">🏠 Home</a></li> <BR>
+
+            
+            <li><a href="patient_login.html">🩸 Patient</a></li>
+            
+           
+        <!-- </ul><br><br><br><br><br><br><br><br><br><br><br>
+        <button class="logout">Logout</button>-->
+    </div>
+    
+    <div class="register-container">
+        <h2 style="color: rgb(0, 255, 213);"><b>Donor Registration</b></h2><br>
+        <form action="donor_dashboard.html">
+            <input type="text" placeholder="Full Name" required><br><br>
+            <input type="text" placeholder="Username" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <select required>
+                <option value="" disabled selected>Blood Group</option>
+                <option>A+</option>
+                <option>B+</option>  
+                <option>O+</option>
+                <option>AB+</option>
+                <option>A-</option>
+                <option>B-</option>
+                <option>O-</option>
+                <option>AB-</option>
+            </select><br><br>
+            <input type="text" placeholder="Address" required><br><br>
+            <input type="tel" placeholder="Contact No." required><br><br>
+            <input type="file" required><br><br>
+            <button type="submit">REGISTER</button>
+        </form><br>
+        <p>Already have an account? <a href="donor_login.html">Login Here</a></p>
+    </div>
+</body>
+</html>

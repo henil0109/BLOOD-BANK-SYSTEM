@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+   
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar"><br>
+        <h2>Admin Panel</h2>
+        <a onclick="showSection('dashboard')">🏠 Dashboard</a><br>
+        <a onclick="showSection('manageDonors')">🩸 Manage Donors</a><br>
+        <a onclick="showSection('managePatients')">👤 Manage Patients</a><br>
+        <a onclick="showSection('bloodRequests')">📋 Blood Requests</a><br>
+        <a onclick="showSection('bloodStock')">🏥 Blood Stock</a><br>
+        <a href="javascript:void(0);" onclick="logout()">🚪 Logout</a>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Dashboard Section -->
+        <div id="dashboard" class="section active"><br>
+            <h2>Welcome, Admin</h2><br>
+            <div class="face-cards">
+                <div class="card">Total Donors: <span id="donorCount">10</span></div>
+                <div class="card">Total Patients: <span id="patientCount">5</span></div>
+                <div class="card">Total Requests: <span id="requestCount">3</span></div>
+                <div class="card">Total Stock: <span>50 Units</span></div>
+            </div>
+        </div>
+
+        <!-- Manage Donors Section -->
+        <div id="manageDonors" class="section">
+            <h2>Manage Donors</h2><br>
+            <table id="donorTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Group</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>A+</td>
+                    <td>9876543210</td>
+                    <td><button onclick="deleteRow(this, 'donorCount')">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>O-</td>
+                    <td>9123456789</td>
+                    <td><button onclick="deleteRow(this, 'donorCount')">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Manage Patients Section -->
+        <div id="managePatients" class="section">
+            <h2>Manage Patients</h2><br>
+            <table id="patientTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Group</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Michael Scott</td>
+                    <td>B+</td>
+                    <td>8765432109</td>
+                    <td><button onclick="deleteRow(this, 'patientCount')">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+
+       <!-- Blood Requests Section -->
+<div id="bloodRequests" class="section">
+    <h2>Blood Requests</h2><br>
+    <table id="requestTable">
+        <tr>
+            <th>Patient</th>
+            <th>Blood Group</th>
+            <th>Units</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Michael Scott</td>
+            <td>B+</td>
+            <td>2</td>
+            <td id="status-0">Pending</td>
+            <td>
+                <button class="approve-btn" onclick="approveRequest(0)">✅ Approve</button>
+                <button class="reject-btn" onclick="rejectRequest(0)">❌ Reject</button>
+            </td>
+        </tr>
+        <tr>
+            <td>HENIL PATEL</td>
+            <td>B+</td>
+            <td>10</td>
+            <td id="status-0">Pending</td>
+            <td>
+                <button class="approve-btn" onclick="approveRequest(0)">✅ Approve</button>
+                <button class="reject-btn" onclick="rejectRequest(0)">❌ Reject</button>
+            </td>
+            <tr>
+                <td>Meet Patel</td>
+                <td>A+</td>
+                <td>15</td>
+                <td id="status-0">Pending</td>
+                <td>
+                    <button class="approve-btn" onclick="approveRequest(0)">✅ Approve</button>
+                    <button class="reject-btn" onclick="rejectRequest(0)">❌ Reject</button>
+                </td>
+            </tr>
+        </tr>
+    </table>
+</div>
+
+
+        <!-- Blood Stock Section -->
+        <div id="bloodStock" class="section">
+            <h2>Blood Stock</h2><br>
+            <table>
+                <tr>
+                    <th>Blood Group</th>
+                    <th>Available Units</th>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>O-</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Logout Section -->
+        <div id="logout" class="section">
+            <h2>Logout</h2>
+            <p>You have been logged out.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

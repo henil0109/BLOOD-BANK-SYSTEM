@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="animated-title">BLOOD BANK SYSTEM</h1>
+     <!-- Three-dot menu icon -->
+        <!-- Modern Hamburger Button -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+
+        <!-- Glassmorphism Side Panel -->
+        <div class="menu-panel" id="menu">
+            <div>
+                <br><br><br><br><br>
+                <p style="font-size: 24px; color: rgb(6, 6, 6);"><b><u>Blood Bank System</u></b></p>
+
+            </div><br><br>
+            <ul>
+               <li><a href="index.html">🏠 Home</a></li> <BR>
+
+                
+                <li><a href="patient_login.html">🩸 Patient</a></li>
+                
+               
+           <!-- </ul><br><br><br><br><br><br><br><br><br><br><br>
+            <button class="logout">Logout</button>-->
+        </div>
+    <div class="login-container">
+        <h1 style="color: rgb(0, 255, 213);"><b>DONOR LOGIN</b></h1><br>
+        <form action="donor_dashboard.html" method="POST">
+            <div class="input-group">
+                <label for="username" style="color: rgb(7, 243, 54);"></label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            </div><br>
+
+            <div class="input-group">
+                <label for="password" style="color: rgb(9, 242, 21);"></label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div><br>
+
+            <button type="submit" class="login-btn">Login</button><br>
+        </form>
+        <p style="color: rgba(247, 245, 243, 0.934);">Don't have an account? <a href="donor_register.html">Register Now</a></p>
+    </div>
+</body>
+</html>
