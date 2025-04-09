@@ -12,7 +12,6 @@ A modern Blood Bank Management System with donor/patient registration, blood don
 - 📊 Dynamic Dashboard for Donors
 - 📱 Responsive UI with modern glassmorphism and animations
 - 🔐 Secure Authentication (coming soon in backend)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Tech Stack
 
