@@ -50,7 +50,10 @@ Clinics or community blood donation camps
 ## 👨‍💻 Author
 
 Henil Patel
+
 Computer Science Student
+
 CHARUSAT University
+
 📧 patelhenil0109@gmail.com
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
