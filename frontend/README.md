@@ -7,7 +7,9 @@ A modern, responsive website for managing blood donations, requests, and users (
 ## 🌐 Website Preview
 
 ### 🏠 Home Page  
-![Home Page](images/homepage.png)
+
+![image](https://github.com/user-attachments/assets/9ffacc3f-e9ee-426e-b850-bcf1e21d53c8)
+
 
 ### 🙋 Donor Dashboard  
 ![Donor Dashboard](images/donor_dashboard.png)
@@ -30,8 +32,6 @@ A modern, responsive website for managing blood donations, requests, and users (
 - 🔐 Secure login (Admin login page with validation)
 - 📱 Fully responsive across devices
 
----
 
-## 📁 Folder Structure
 
 
