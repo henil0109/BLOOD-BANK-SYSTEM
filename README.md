@@ -13,7 +13,8 @@ A modern Blood Bank Management System with donor/patient registration, blood don
 - 📱 Responsive UI with modern glassmorphism and animations
 - 🔐 Secure Authentication (coming soon in backend)
 
-- 🛠️ Tech Stack
+🛠️ Tech Stack
+
 Frontend: HTML5, CSS3, JavaScript (Vanilla)
 
 UI/UX: Glassmorphism, Flex/Grid Layouts, Responsive Design
